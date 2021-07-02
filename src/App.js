@@ -3,7 +3,7 @@ import CounterContextAPI from "./CounterContextAPI";
 import Parent from "./Parent";
 
 function App() {
-  let countState= React.useState(1);// [countState, setCountState]  
+  let countState= React.useState(0);// [countState, setCountState]  
   return (
     <CounterContextAPI.Provider value={countState}>
       <div>
