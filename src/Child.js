@@ -3,11 +3,13 @@ import CounterContextAPI from "./CounterContextAPI";
 
 const Child = () => {
   let counterValue = React.useContext(CounterContextAPI);
- // console.log(counterValue);
+ // console.log(CounterContextAPI);
   return (
     <div>
-      <h1>Counter Value using Context API is: {counterValue[0]} </h1>
-      <button onClick={()=>{counterValue[1](++counterValue[0])}}>Increment Using Context API</button>
+      <h1>Counter Value using Context API in child 1 </h1>
+      <h2>Value is {counterValue[0]} </h2>
+      <button onClick={()=>{counterValue[1](++counterValue[0])}}>Increment Using Context API</button>{" "}
+      <button onClick={()=>{counterValue[1](--counterValue[0])}}>Decrement Using Context API</button>
     </div>
   );
 };
