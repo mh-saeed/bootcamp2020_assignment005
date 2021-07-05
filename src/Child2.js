@@ -8,8 +8,8 @@ const Child2 = () => {
     <div>
       <h1>Counter Value using Use Reducer in child 2 </h1>
       <h2>Value is {state}</h2>
-      <button onClick={()=>{dispatch('INCREMENT')}}>Increment using Use Reducer</button> {""}
-      <button onClick={()=>{dispatch('DECREMENT')}}>Decrement using Use Reducer</button>
+      <button onClick={() => { dispatch('INCREMENT') }}>Increment using Use Reducer</button> {""}
+      <button onClick={() => { dispatch('DECREMENT') }}>Decrement using Use Reducer</button>
     </div>
   );
 };
